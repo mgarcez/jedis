@@ -13,6 +13,10 @@ public final class RedisOutputStream extends FilterOutputStream {
   protected final byte[] buf;
 
   protected int count;
+  
+  public int getCount() {
+		return count;
+	}
 
   private final static int[] sizeTable = { 9, 99, 999, 9999, 99999, 999999, 9999999, 99999999,
           999999999, Integer.MAX_VALUE };

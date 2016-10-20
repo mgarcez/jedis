@@ -24,7 +24,11 @@ public class RedisInputStream extends FilterInputStream {
 
   protected int count, limit;
 
-  public RedisInputStream(InputStream in, int size) {
+  public int getCount() {
+	return count;
+}
+
+public RedisInputStream(InputStream in, int size) {
     super(in);
     if (size <= 0) {
       throw new IllegalArgumentException("Buffer size <= 0");
