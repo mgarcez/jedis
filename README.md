@@ -8,6 +8,7 @@ Jedis was conceived to be EASY to use.
 
 Jedis is fully compatible with redis 2.8.x and 3.0.x.
 
+FOR TESTS
 ## Community
 
 Meet us on IRC: ##jedis on freenode.net
