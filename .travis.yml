@@ -10,6 +10,7 @@ before_install:
     - cd ./stunnel-5.29 && ./configure && make && sudo make install && cd ..
 install:
   - make travis-install
+  - docker build .
 script: TEST="\!ModuleTest" make test
 cache:
   directories:
